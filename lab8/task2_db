@@ -1,0 +1,26 @@
+CREATE TABLE books (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    description TEXT,
+    publication_year INT,
+    page_count INT,
+    cover_photo VARCHAR(255)
+);
+
+CREATE TABLE authors (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    last_name VARCHAR(255) NOT NULL,
+    first_name VARCHAR(255) NOT NULL,
+    country VARCHAR(255)
+);
+
+-- Create a table
+CREATE TABLE IF NOT EXISTS users (
+    id INT IDENTITY(1,1) PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    age INT
+);
+
+
+'mysql:host=localhost;dbname=books_db', 'user12', '121212aA'

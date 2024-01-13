@@ -64,7 +64,13 @@
             color: #ccc;
             font-size: 18px;
             margin-bottom: 10px;
+            width: 40%;
         }
+
+        .lab p{
+            color: #fff;
+            font-size: 12px;
+            margin-bottom: 10px;}
     </style>
 </head> 
   
@@ -77,7 +83,7 @@
         
         <div class="lab">
             <?php  
-            $labFolderNumber = 7;
+            $labFolderNumber = 8;
 
             for ($i = 1; $i <= 15; $i++) {
                 $taskFilePath = "lab$labFolderNumber/task$i.php";
