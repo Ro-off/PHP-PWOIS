@@ -77,8 +77,9 @@
         
         <div class="lab">
             <?php  
-            $labFolderNumber = 6;
-            for ($i = 2; $i <= 9; $i++) {
+            $labFolderNumber = 7;
+
+            for ($i = 1; $i <= 15; $i++) {
                 $taskFilePath = "lab$labFolderNumber/task$i.php";
                 if (file_exists($taskFilePath)) {
                     echo "<h3>Lab $labFolderNumber - Task $i</h3>";
