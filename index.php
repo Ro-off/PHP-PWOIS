@@ -16,7 +16,7 @@
         }
 
         h3 {
-            text-align: center;
+            text-align: left;
             margin-top: 20px;
             font-size: 24px;
         }
@@ -24,6 +24,10 @@
         hr {
             width: 50%;
             margin: 20px auto;
+        }
+
+        .lab {
+            margin-left: 20px;
         }
         
         .container {
@@ -73,31 +77,15 @@
         
         <div class="lab">
             <?php  
-            // echo '<br>';
-            // echo '<h3>Lab 6 - Task 2.2</h3>';
-            // require 'lab6/task2_2.php';
-
-            // echo '<hr>'; 
-
-            // echo '<h3>Lab 3 - Task 12</h3>';
-            // require 'lab3/task12.php';
-
-            // echo '<hr>'; 
-
-            echo '<h3>Lab 6 - Task 3</h3>';
-            require 'lab6/task3.php';
-
-            echo '<hr>'; 
-
-            // echo '<h3>Lab 6 - Task 4</h3>';
-            // require 'lab6/task4.php'; 
-
-            // echo '<hr>';
-
-            echo '<h3>Lab 6 - Task 6</h3>';
-            require 'lab6/task6.php';
-            echo '<hr>';
-
+            $labFolderNumber = 6;
+            for ($i = 2; $i <= 9; $i++) {
+                $taskFilePath = "lab$labFolderNumber/task$i.php";
+                if (file_exists($taskFilePath)) {
+                    echo "<h3>Lab $labFolderNumber - Task $i</h3>";
+                    require $taskFilePath;
+                    echo "<hr>";
+                } 
+            }
             ?> 
         </div> 
         
