@@ -43,7 +43,9 @@ $this->params['breadcrumbs'][] = $this->title;
                 </div>
             </div>
             <div class="form-group">
-            
+            <div class="signup-btn">
+            <?= Html::a('Create account', ['site/signup'], ['class' => 'btn-link']) ?>
+            </div>
             </div>
 
             <?php ActiveForm::end(); ?>
